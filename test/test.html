@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../src/dialog-box.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="modal-dialog" id="box1" style="display:none;"> 
+		 <div class="modal-content">
+		     <div class="modal-header">
+		         <h4 class="modal-title">对话框标题</h4>
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+		     </div>
+		     <div class="modal-body" style="max-height: initial; overflow: visible;">
+		         <p>主题内容...</p>
+		     </div>
+		     <div class="modal-footer">
+		         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		         <button type="button" class="btn btn-primary">确定</button>
+		     </div>
+		 </div>
+		</div>
+	</body>
+</html>
+<script src="../dist/dialog-1.1.7.min.js"></script>
+<script>
+	var obj1 = {
+	 id:"box1",
+	 size_width:"small",
+	 title:"对话框标题",
+	 title_color:'red',
+	 content:"主题内容..",
+	 content_color:'blue',
+	 posX:"center",
+	 posY:"center",
+	 boxshow:true,
+	 Mousedrag:true,
+	 animation:true,
+	 callback:fun,
+	}
+	var a = new Dialog(obj1);
+function fun(){
+	console.log("点击确定后所要完成的工作！");
+}
+</script>

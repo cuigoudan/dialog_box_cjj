@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../src/dialog-box.css">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="x" value="小" class="btn_">
+		<input type="button" id="y" value="大" class="btn_">
+		<div class="modal-dialog" id="box1" style="display:none;"> 
+		    <div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">对话框标题</h4>
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body" style="max-height: initial; overflow: visible;">
+					<p>主题内容...</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+		    </div>
+		</div>
+		<div class="modal-dialog" id="box2" style="display:none;">
+		    <div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">对话框标题</h4>
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body" style="max-height: initial; overflow: visible;">
+					<p>主题内容...</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+		    </div>
+		</div>
+	</body>
+</html>
+<script src="js/dialog-1.1.7.min.js"></script>
+<script type="text/javascript">
+var obj1 = {
+	id:"box1",
+	size_width:"small",
+	title:"你是我遥不可及的梦啊！",
+	title_color:'red',
+	content:"夕阳余晖，孤雁翱翔，落霞与孤鹜齐飞，秋水共长天一色。",
+	content_color:'#00f',
+	posX:"center",
+	posY:"center",
+	boxshow:{
+		status:true,
+		color:"rgba(0,252,0,0.5)",
+		h_shadow:"0",
+		v_shadow:"5px",
+		blur:"15px",
+	},
+	Mousedrag:true,
+	animation:true,
+}
+var obj2 = {
+	id:"box2",
+	size_width:"big",
+	title:"你是我遥不可及的梦啊！",
+	title_color:'#f00',
+	content:"夕阳余晖，孤雁翱翔，落霞与孤鹜齐飞，秋水共长天一色。",
+	content_color:'#00f',
+	posX:"center",
+	posY:"center",
+	boxshow:{
+		status:false,
+	},
+	Mousedrag:false,
+	animation:false,
+	callback:b,
+}
+function a(){
+	console.log("ddd");
+}
+function b(){
+	console.log("ccc");
+}
+x.onclick = function(){
+	var a = new Dialog(obj1);
+}
+y.onclick = function(){
+	var c = new Dialog(obj2);
+}
+</script>
