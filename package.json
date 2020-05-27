@@ -1,0 +1,25 @@
+{
+  "name": "dialog",
+  "version": "1.1.7",
+  "description": "对话框组件",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "原生JS"
+  ],
+  "author": "秋水共长天一色",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-text-replace": "^0.4.0"
+  }
+}
