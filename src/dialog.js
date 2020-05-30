@@ -8,6 +8,7 @@ function Dialog(obj){
 	this.btn_default = this.box.querySelector(".btn-default");
 	this.btn_primary = this.box.querySelector(".btn-primary");
 	this.title = obj.title;
+	this.type = obj.type;
 	this.content = obj.content;
 	this.posX = obj.posX;
 	this.posY = obj.posY;
@@ -66,6 +67,9 @@ Dialog.prototype.init = function(){
 		default:
 			this.box.style.top = this.posY+"px";
 			break;
+	}
+	if(this.type==="comfirm"){
+		this.box.querySelector(".btn-default").style.display = "inline-block";
 	}
 	if(this.animation){
 		this.box.style.animation = "slidedown .15s linear forwards";

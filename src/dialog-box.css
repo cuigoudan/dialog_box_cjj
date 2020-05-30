@@ -106,6 +106,9 @@ button.close {
     background-color: #3280fc;
     border-color: #1970fc;
 }
+.btn-default{
+	display: none;
+}
 @keyframes slidedown{
 	0%{
 		margin-top: -50px;

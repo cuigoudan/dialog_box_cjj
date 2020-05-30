@@ -11,7 +11,7 @@
 ```
 2. 链接JS
 ```
-<script src="../dist/dialog-1.1.7.min.js"></script>
+<script src="../dist/dialog-1.1.8.min.js"></script>
 ```
 3. 复制HTML代码
 ```
@@ -35,6 +35,7 @@
 ```
 var obj1 = {
 	id:"box1",
+	type:"alert"
 	size_width:"small",
 	title:"你是我遥不可及的梦啊！",
 	title_color:'red',
@@ -51,7 +52,7 @@ var obj1 = {
 	},
 	Mousedrag:true,
 	animation:true,
-	callback:b,
+	callback:fun,
 }
 var a = new Dialog(obj1);
 ```
@@ -59,6 +60,7 @@ var a = new Dialog(obj1);
 | 参数名 | 参数值 | 是否必填 | 参数介绍 | 参数类型 |
 | :-----| :---- | :----: | :---- | :---- |
 | id | 节点id | 是 | 对话框最外层元素id | string |
+| type | alert / comfirm | 否 | 对话框类型 | string |
 | size_width | small / normal / big / 具体宽度 / 默认为600px | 否 | 对话框宽度 | string |
 | title | 对话框标题内容  | 否 | 对话框标题内容 | string |
 | title_color | #000 / red / rgba() / rgb() | 否 | 标题文字颜色 | string |
