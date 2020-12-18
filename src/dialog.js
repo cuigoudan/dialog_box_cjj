@@ -25,7 +25,7 @@ function Dialog(obj){
 Dialog.prototype.init = function(){
 	switch(this.size_width){
 		case "small":
-			this.box.style.width = "300px";
+			this.box.style.width = "3000px";
 			break;
 		case "normal":
 			this.box.style.width = "6000px";
