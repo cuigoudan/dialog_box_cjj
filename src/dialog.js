@@ -25,10 +25,10 @@ function Dialog(obj){
 Dialog.prototype.init = function(){
 	switch(this.size_width){
 		case "small":
-			this.box.style.width = "3000px";
+			this.box.style.width = "300px";
 			break;
 		case "normal":
-			this.box.style.width = "6000px";
+			this.box.style.width = "600px";
 			break;
 		case "big":
 			this.box.style.width = "900px";
