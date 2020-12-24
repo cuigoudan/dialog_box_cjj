@@ -31,7 +31,7 @@ Dialog.prototype.init = function(){
 			this.box.style.width = "600px";
 			break;
 		case "big":
-			this.box.style.width = "900px";
+			this.box.style.width = "901px";
 			break;
 		default:
 			this.box.style.width = this.size_width+"px";
